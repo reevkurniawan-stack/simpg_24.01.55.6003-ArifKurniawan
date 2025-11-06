@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - SIMPG_24.01.55.6003-ArifKurniawan</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #007bff, #00c3ff);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      width: 380px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .btn-gradient {
+      background: linear-gradient(45deg, #007bff, #00c3ff);
+      border: none;
+      color: white;
+      transition: 0.3s;
+    }
+    .btn-gradient:hover {
+      background: linear-gradient(45deg, #0062cc, #00a0e9);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card p-4 text-center">
+    <h3 class="fw-bold text-primary mb-3">🔐 Login SIMPG</h3>
+    <form id="loginForm">
+      <div class="mb-3 text-start">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" id="username" class="form-control" required>
+      </div>
+      <div class="mb-3 text-start">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-gradient w-100">Masuk</button>
+    </form>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
